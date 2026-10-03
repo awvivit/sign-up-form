@@ -5,8 +5,8 @@
 
 body {
     display:flex; 
-    width: auto;
-    justify-content: flex-start;
+    width: 80%;
+    justify-content: center;
     margin: 0px; 
     flex-shrink: 0;
     padding: 0px; 
@@ -67,15 +67,14 @@ body {
 
 #logo { 
     width: 200px; 
-  background-color: #000; /* Put any target color here */
-  
-  /* The magic stencil properties */
-  -webkit-mask-image: url('../images/logo.png');
-  mask-image: url('../images/logo.png');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+    background-color: #000; /* Put any target color here */
+    /* The magic stencil properties */
+    -webkit-mask-image: url('../images/logo.png');
+    mask-image: url('../images/logo.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 
@@ -119,6 +118,22 @@ body {
     
 }
 
+.form-footer a,  .form-footer a:active , .form-footer a:focus  { 
+    font-weight: bold; 
+    color: forestgreen;
+    text-decoration: none; 
+}
+
+.form-footer a:active { 
+    font-weight: bold; 
+    color: forestgreen;
+    text-decoration: none; 
+}
+
+
+
+
+
 .theform { 
     display: flex; 
     flex-direction: column;
@@ -158,6 +173,7 @@ label {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px; 
+    font-weight: bold; 
 
 }
 
@@ -180,7 +196,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     padding: .8em 2.5em;
-    margin: 10px 5px 10px 5px;
+    margin: 10px 5px 20px 5px;
 }
 
 
