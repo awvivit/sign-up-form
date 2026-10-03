@@ -1,3 +1,7 @@
+:root { 
+    font-family:Arial, Helvetica, sans-serif; 
+
+}
 
 body {
     display:flex; 
@@ -10,7 +14,9 @@ body {
 
 .left-container { 
     display: flex; 
-    background-color: light-gray; 
+    background-image: url("../images/flower.jpg"); 
+    background-size: cover; 
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,30 +44,52 @@ body {
     align-items: center;
     height: 150px; 
     flex-shrink: 0;
+    color: white; 
     
+}
+
+.left-header-overlay h1 { 
+    font-size: 60px;
+
+}
+
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white; 
 }
 
 .left-bottom { 
     height: 50%; 
-
+    margin-left: -10px; 
 }
 
 #logo { 
-    width: 60px; 
-    height: 70px; 
+    width: 200px; 
+  background-color: #000; /* Put any target color here */
+  
+  /* The magic stencil properties */
+  -webkit-mask-image: url('../images/logo.png');
+  mask-image: url('../images/logo.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
+
 
 
 .form-header { 
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     flex-grow: 1; 
     flex-shrink: 0; 
     height: 33%;
-   
+    padding-left: 5%; 
 }
 
 .form-body { 
@@ -72,7 +100,7 @@ body {
     flex-grow: 1; 
     flex-shrink: 0; 
     height: 33%;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 5px 5px 10px gray;
     margin-right: 0px; 
     
 }
@@ -86,7 +114,8 @@ body {
     flex-grow: 1; 
     flex-shrink: 0; 
     height: 33%;
-    padding-top: 50px; 
+    padding-top: 5%; 
+    padding-left: 5%; 
     
 }
 
@@ -108,7 +137,7 @@ body {
     flex-shrink: 0;
     width: 100%;
     justify-content: flex-start;
-      
+    
 }
 
 .theform div div { 
@@ -117,24 +146,48 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     flex-shrink: 1;
-    flex-grow: 1; 
+    flex-grow: 0; 
     height: 75px; 
 
 }
 
 label {
-    height: 50px; 
-    line-height: 1.2; 
+    
+    line-height: 1; 
     width: 300px;
-    margin-top: 10px; 
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+
 }
 
 input { 
-    height: 50px; 
+    
     line-height: 1.2; 
     width: 300px; 
-    border-radius: 3px; 
+    border-radius: 5px; 
+    border: 1px solid lightgray; 
+    height: 45%
 
+
+}
+
+button {
+    background-color: rgb(40, 82, 40);
+    color: white;
+    border: 1px solid rgb(40, 82, 40);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: .8em 2.5em;
+    margin: 10px 5px 10px 5px;
+}
+
+
+
+
+input:focus { 
+    border: 1px solid blue; 
 }
 
 
