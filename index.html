@@ -33,13 +33,15 @@
             </div>
         </div>
         <div class="right-container">
-            <div class="form-header">
-                <h2>If this was a real service, I would have some information here about the form I want you to fill
-                    out. I think that we could really help you out with your creative needs. </h2>
-                <h2>Sign-up <em>now</em> to get the deal of a lifetime!</h2>
-            </div>
-            <div class="form-body">
-                <form action="submit" class="theform" id="submittal_form">
+
+            <form action="" method="get" class="theform" id="submittal_form">
+                <div class="form-header">
+                    <h2>If this was a real service, I would have some information here about the form I want you to fill
+                        out. I think that we could really help you out with your creative needs. </h2>
+                    <h2>Sign-up <em>now</em> to get the deal of a lifetime!</h2>
+                </div>
+                <div class="form-body">
+
                     <h2>Let's do this!</h2>
                     <div>
                         <div>
@@ -82,15 +84,16 @@
 
                     </div>
 
-                </form>
-            </div>
 
-            <div class="form-footer">
-                <div>
-                    <button id="create_account" type="javascript: submit()">Create Account</button>
                 </div>
-                <div>Already have and account? <a href="#">Log in</a></div>
-            </div>
+
+                <div class="form-footer">
+                    <div>
+                        <button id="create_account" formaction="submit">Create Account</button>
+                    </div>
+                    <div>Already have and account? <a href="#">Log in</a></div>
+                </div>
+            </form>
         </div>
     </div>
 </body>

@@ -13,7 +13,7 @@ body {
 
 .main-container { 
     display: flex; 
-    width: 90%; 
+    width: 80%; 
     justify-content: center; 
     margin: 0px;  
     padding: 0px; 
@@ -27,11 +27,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 35%;
     
 }
 
-.right-container { 
+.right-container  { 
     display: flex; 
     flex-direction: column ; 
     background-color: whitesmoke;
@@ -49,6 +49,7 @@ body {
     background-color: #33333399;
     width: 100%;
     flex-shrink: 0;
+    justify-content: center;
 
   
 }
@@ -69,7 +70,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end;
-    height: 50%;
+    height: 60%;
     width: 100%; 
 }
 
@@ -99,8 +100,7 @@ body {
     width: 150px;
     flex-grow: 0;
     flex-shrink: 0;
-    margin-left: 20%;
-    margin-right: -10px;
+
 }
 
 #logo { 
@@ -115,34 +115,52 @@ body {
     justify-content: flex-start;
     height: auto; 
     overflow: hidden; 
-    word-wrap: normal;
-    
+    word-wrap: normal;    
+}
+
+.theform { 
+    display: flex; 
+    flex-direction: column ; 
+    background-color: whitesmoke;
+    flex-grow: 1; 
+    flex-shrink: 0; 
+    height: auto;
+    margin-right: 0px; 
+    overflow: hidden; 
+    gap: 30px; 
 }
 
 .form-header { 
     display: flex; 
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 90%;
     flex-grow: 1; 
     flex-shrink: 0; 
     height: 33%;
-    padding-left: 5%; 
-    
+    padding-left: 5%;
+    padding-right: 10%;  
+}
+
+.form-header h2 { 
+    margin-right: 15%;
 }
 
 .form-body { 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: balance;
     width: 100%;
-    flex-grow: 1; 
-    flex-shrink: 0; 
+    flex-grow: 1;
+    flex-shrink: 0;
     height: 33%;
     box-shadow: 5px 5px 10px gray;
     margin-right: 0px;
-    background-color: white; 
+    background-color: white;
+    padding-left: 50px;
     
 }
 
@@ -155,7 +173,6 @@ body {
     flex-grow: 1; 
     flex-shrink: 0; 
     height: 33%;
-    padding-top: 5%; 
     padding-left: 5%; 
     
 }
@@ -172,28 +189,17 @@ body {
     text-decoration: none; 
 }
 
-.theform { 
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%; 
-    height: 100%;
-    flex-shrink: 0; 
-    padding-left: 5%; 
-    flex-shrink: 1; 
-    flex-grow: 1; 
-}
 
-.theform h2, .theform div {
+
+.form-body h2, .form-body div {
     display: flex; 
     flex-shrink: 0;
-    width: 100%;
+    
     justify-content: flex-start;
     
 }
 
-.theform div div { 
+.form-body div div { 
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
@@ -213,8 +219,6 @@ label {
     font-size: 14px; 
     font-weight: bold; 
     color:#0000008d
-
-
 }
 
 input { 
@@ -250,11 +254,6 @@ button:hover {
     color: white; 
 }
 
-
-
-
 input:focus { 
     border: 1px solid blue; 
 }
-
-
